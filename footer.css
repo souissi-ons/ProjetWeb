@@ -1,0 +1,33 @@
+/* Footer Styles */
+.footer-logo {
+  width: 150px; /* Ajustez la largeur selon vos besoins */
+}
+
+.footer {
+  background-color: #212529; /* Couleur de fond du footer */
+  color: #ffffff; /* Couleur du texte du footer */
+}
+
+.footer h5 {
+  color: #ffffff; /* Couleur des titres */
+}
+
+.footer a {
+  color: #ffffff; /* Couleur des liens */
+}
+
+.footer a:hover {
+  color: #f8f9fa; /* Couleur des liens au survol */
+}
+
+.footer ul.list-unstyled {
+  padding-left: 0; /* Supprime le padding par défaut des listes non ordonnées */
+}
+
+.footer hr.my-4 {
+  border-color: #6c757d; /* Couleur de la ligne de séparation */
+}
+
+.footer-copyright {
+  font-size: 14px; /* Taille de la police */
+}

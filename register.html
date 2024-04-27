@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S'inscrire</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./header.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <a href="./home.html">
+          <div class="logo">
+            <img src="./logo.png" alt="logo-petadop" class="logo-img" />
+          </div>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./home.html" class="nav__link">Accueil</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./a-propos.html" class="nav__link">A propos</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="account">
+          <ul class="nav__list">
+            <li id="login" class="nav__list-item" style="display: none">
+              <a href="./login.html" class="nav__link">Connexion</a>
+            </li>
+            <span
+              id="separateur"
+              class="seperator"
+              style="display: none"
+            ></span>
+            <li id="register" class="nav__list-item" style="display: none">
+              <a href="./register.html" class="nav__link login">Inscription</a>
+            </li>
+            <li id="publication" class="nav__list-item" style="display: none">
+              <a href="./publication.html" class="nav__link"
+                >Ajouter une publication</a
+              >
+            </li>
+            <li id="logout" class="nav__list-item" style="display: none">
+              <a href="./logout.php" class="nav__link">se déconnecter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- register form -->
+    <main class="d-flex align-items-center py-5 mt-5">
+      <div class="container">
+        <div class="card login-card overflow-hidden">
+          <div class="row no-gutters">
+            <div
+              class="col-md-5"
+              style="
+                background-image: url('./login.jpg');
+                background-size: cover;
+                height: 82vh;
+              "
+            ></div>
+            <div class="col-md-7">
+              <div class="mt-2">
+                <span
+                  class="text-center mb-3 d-flex align-items-center justify-content-center"
+                  style="font-size: 2em"
+                >
+                  <img
+                    src="./logo.png"
+                    alt="logo-petadop"
+                    class=""
+                    style="height: 20vh"
+                  />
+                  Inscription
+                </span>
+                <form class="mx-3" action="register.php" method="POST">
+                  <label for="nom" class="mb-0 mt-2">Nom</label>
+                  <input type="text" id="nom" name="nom" class="form-control" />
+                  <label for="prenom" class="mb-0 mt-2">Prénom</label>
+                  <input
+                    type="text"
+                    id="prenom"
+                    name="prenom"
+                    class="form-control"
+                  />
+                  <label for="email" class="mb-0 mt-2">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                  />
+                  <label for="password" class="mb-0 mt-2">Mot de passe</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                  />
+
+                  <div class="text-center mt-3">
+                    <button class="btn btn-dark">S'inscrire</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>

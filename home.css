@@ -1,0 +1,64 @@
+.carousel {
+  width: 70%;
+  margin: auto;
+}
+
+.row-cols-md-3 > * {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+
+#publicationsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardcontainer {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+  margin-top: 15px;
+  height: 200px;
+  background: url("https://via.placeholder.com/300");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 10px;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.option-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.autre-contect {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .row-cols-md-3 > * {
+    flex: 0 0 100%;
+    max-width: 80%;
+  }
+}

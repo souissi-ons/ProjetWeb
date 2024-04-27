@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter publication</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./publication.css" rel="stylesheet" />
+    <link href="./header.css" rel="stylesheet" />
+    <link href="./footer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <a href="./home.html">
+          <div class="logo">
+            <img src="./logo.png" alt="logo-petadop" class="logo-img" />
+          </div>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./home.html" class="nav__link">Accueil</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./a-propos.html" class="nav__link">A propos</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="account">
+          <ul class="nav__list">
+            <li id="login" class="nav__list-item" style="display: none">
+              <a href="./login.html" class="nav__link">Connexion</a>
+            </li>
+            <span
+              id="separateur"
+              class="seperator"
+              style="display: none"
+            ></span>
+            <li id="register" class="nav__list-item" style="display: none">
+              <a href="./register.html" class="nav__link login">Inscription</a>
+            </li>
+            <li id="publication" class="nav__list-item" style="display: none">
+              <a href="./publication.html" class="nav__link"
+                >Ajouter une publication</a
+              >
+            </li>
+            <li id="logout" class="nav__list-item" style="display: none">
+              <a href="./logout.php" class="nav__link">se déconnecter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container col-md-6 col-xl-6 mt-5">
+      <span
+        class="text-center mb-3 d-flex align-items-center justify-content-center"
+        style="font-size: 2em"
+      >
+        <img
+          src="./logo.png"
+          alt="logo-petadop"
+          class="mt-5"
+          style="height: 20vh"
+        />
+        <div class="mt-5">Ajouter une publication</div>
+      </span>
+      <form
+        class="mt-4 mx-5"
+        action="publication.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="row">
+          <div class="radio-inline">
+            <label for="adoption">Adoption</label>
+            <input type="radio" id="adoption" name="choix" value="adoption" />
+            <label for="vente">Vente</label>
+            <input type="radio" id="vente" name="choix" value="vente" />
+          </div>
+          <label for="titre" class="mb-0 mt-3">Titre</label>
+          <input
+            type="text"
+            id="titre"
+            name="titre"
+            class="form-control mt-3"
+          />
+          <label for="age" class="mb-0 mt-3">Age en mois</label>
+          <input type="number" id="age" name="age" class="form-control mt-3" />
+          <label for="num" class="mb-0 mt-3">Numéro de téléphone</label>
+          <input type="tel" id="num" name="num" class="form-control mt-3" />
+          <label for="description" class="mb-0 mt-3">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            class="form-control mt-3"
+          ></textarea>
+          <input
+            type="file"
+            id="imageUpload"
+            name="imageUpload"
+            accept="image/*"
+            class="mt-3"
+          />
+
+          <div class="text-center my-3">
+            <button class="btn btn-dark">Publier</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <img src="./logo.png" alt="logo" class="footer-logo mb-3" />
+        <div class="row">
+          <div class="col-md-4">
+            <h5>À propos</h5>
+            <p>
+              PetAdop est une plateforme en ligne dédiée aux animaux de
+              compagnie, offrant divers services et informations pour les
+              propriétaires d'animaux.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Liens utiles</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="./home.html" class="text-light text-decoration-none"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./a-propos.html"
+                  class="text-light text-decoration-none"
+                  >A propos</a
+                >
+              </li>
+              <li>
+                <a href="./contact.html" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li>Email: contact@petadop.com</li>
+              <li>Téléphone: +216 54 887 334</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="footer-copyright">
+          &copy; 2024 PetAdop. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>

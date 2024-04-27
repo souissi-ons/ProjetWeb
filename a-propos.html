@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A propos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./listePublications.css" rel="stylesheet" />
+
+    <link href="./a-propos.css" rel="stylesheet" />
+    <link href="./header.css" rel="stylesheet" />
+    <link href="./footer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <a href="./home.html">
+          <div class="logo">
+            <img src="./logo.png" alt="logo-petadop" class="logo-img" />
+          </div>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./home.html" class="nav__link">Accueil</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./a-propos.html" class="nav__link">A propos</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="account">
+          <ul class="nav__list">
+            <li id="login" class="nav__list-item" style="display: none">
+              <a href="./login.html" class="nav__link">Connexion</a>
+            </li>
+            <span
+              id="separateur"
+              class="seperator"
+              style="display: none"
+            ></span>
+            <li id="register" class="nav__list-item" style="display: none">
+              <a href="./register.html" class="nav__link login">Inscription</a>
+            </li>
+            <li id="publication" class="nav__list-item" style="display: none">
+              <a href="./publication.html" class="nav__link"
+                >Ajouter une publication</a
+              >
+            </li>
+            <li id="logout" class="nav__list-item" style="display: none">
+              <a href="./logout.php" class="nav__link">se déconnecter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- a propos section -->
+    <main class="mx-5 py-5 mt-5 ">
+      <section id="about-section" >
+                <h2>Notre Mission</h2>
+        <p>
+          Chez PetAdop, notre mission est de promouvoir l'adoption responsable des animaux de compagnie et de faciliter la connexion entre les propriétaires d'animaux et les personnes cherchant à adopter ou à acheter des animaux.
+        </p>
+        <h2>Notre Engagement</h2>
+        <p>
+          Nous nous engageons à offrir une plateforme sécurisée et conviviale pour nos utilisateurs. Notre équipe s'efforce de fournir des informations précises et transparentes sur chaque animal répertorié sur notre site.
+        </p>
+        <h2>Comment ça marche</h2>
+        <p>
+          Sur PetAdop, les propriétaires d'animaux peuvent créer des annonces détaillées pour leurs animaux à adopter ou à vendre. Les utilisateurs intéressés peuvent parcourir les annonces, contacter les propriétaires et trouver leur compagnon idéal.
+        </p>
+        <h2>Notre Équipe</h2>
+        <p>
+          Notre équipe est composée de passionnés d'animaux et de professionnels du web dévoués à fournir une expérience positive à nos utilisateurs. Nous croyons en la puissance de la technologie pour aider à améliorer la vie des animaux et de leurs propriétaires.
+        </p>
+        <h2>Contactez-nous</h2>
+        <p>
+          Si vous avez des questions, des suggestions ou si vous souhaitez en savoir plus sur PetAdop, n'hésitez pas à nous contacter: <a href="contact.html">contact</a>
+        </p>
+      </div>
+    </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <img src="./logo.png" alt="logo" class="footer-logo mb-3" />
+        <div class="row">
+          <div class="col-md-4">
+            <h5>À propos</h5>
+            <p>
+              PetAdop est une plateforme en ligne dédiée aux animaux de
+              compagnie, offrant divers services et informations pour les
+              propriétaires d'animaux.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Liens utiles</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="./home.html" class="text-light text-decoration-none"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./a-propos.html"
+                  class="text-light text-decoration-none"
+                  >A propos</a
+                >
+              </li>
+              <li>
+                <a href="./contact.html" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li>Email: contact@petadop.com</li>
+              <li>Téléphone: +216 54 887 334</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="footer-copyright">
+          &copy; 2024 PetAdop. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="header.js"></script>
+    <script src="listePublications.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.radio-inline {
+  text-align: center; /* Centrage horizontal */
+}
+.radio-inline label,
+.radio-inline input[type="radio"] {
+  display: inline-block;
+  margin: 0 20px; /* Espacement entre les boutons */
+}
