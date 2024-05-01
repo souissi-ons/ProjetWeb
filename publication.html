@@ -17,7 +17,7 @@
     <!-- header -->
     <header>
       <div class="container">
-        <a href="./home.html">
+        <a href="./accueil.html">
           <div class="logo">
             <img src="./logo.png" alt="logo-petadop" class="logo-img" />
           </div>
@@ -25,7 +25,7 @@
         <nav class="main-nav">
           <ul class="nav__list">
             <li class="nav__list-item">
-              <a href="./home.html" class="nav__link">Accueil</a>
+              <a href="./accueil.html" class="nav__link">Accueil</a>
             </li>
             <li class="nav__list-item">
               <a href="./a-propos.html" class="nav__link">A propos</a>
@@ -95,6 +95,15 @@
           />
           <label for="age" class="mb-0 mt-3">Age en mois</label>
           <input type="number" id="age" name="age" class="form-control mt-3" />
+          <label for="prix" class="mb-0 mt-3">Prix en dinar</label>
+          <input
+            type="number"
+            id="prix"
+            name="prix"
+            class="form-control mt-3"
+            disabled
+          />
+
           <label for="num" class="mb-0 mt-3">Numéro de téléphone</label>
           <input type="tel" id="num" name="num" class="form-control mt-3" />
           <label for="description" class="mb-0 mt-3">Description</label>
@@ -134,7 +143,7 @@
             <h5>Liens utiles</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="./home.html" class="text-light text-decoration-none"
+                <a href="./accueil.html" class="text-light text-decoration-none"
                   >Accueil</a
                 >
               </li>
@@ -170,5 +179,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="header.js"></script>
+    <script src="publication.js"></script>
   </body>
 </html>

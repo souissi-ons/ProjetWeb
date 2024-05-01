@@ -27,6 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $age = $_POST['age'];
         $num = $_POST['num'];
         $description = $_POST['description'];
+        if (isset($_POST['prix'])) {
+        // Le champ "prix" existe dans la requête POST
+        $prix = $_POST['prix'];
+        }
+
 
         // Vérifier si un fichier a été uploadé
         if (isset($_FILES['imageUpload']) && $_FILES['imageUpload']['error'] === UPLOAD_ERR_OK) {
@@ -53,13 +58,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
 
                 // Préparer et exécuter la requête SQL d'insertion
-                $sql = "INSERT INTO publication (choix, titre, age, num, description, image_path)
-                        VALUES ('$choix', '$titre', '$age', '$num', '$description', '$image_path')";
+               // Vérifier si le champ "prix" existe dans la requête POST
+                if (isset($_POST['prix'])) {
+                    // Le champ "prix" existe, récupérer sa valeur
+                    $prix = $_POST['prix'];
+                    // Ajouter la valeur de $prix dans la requête SQL d'insertion
+                    $sql = "INSERT INTO publication (choix, titre, age, num, description, image_path, prix)
+                            VALUES ('$choix', '$titre', '$age', '$num', '$description', '$image_path', '$prix')";
+                } else {
+                    // Le champ "prix" n'existe pas, insérer NULL dans la base de données pour ce champ
+                    $sql = "INSERT INTO publication (choix, titre, age, num, description, image_path, prix)
+                            VALUES ('$choix', '$titre', '$age', '$num', '$description', '$image_path', NULL)";
+                }
+
 
                 if ($conn->query($sql) === TRUE) {
                     echo '<script>alert("Publication enregistrée avec succès.");</script>';
                     // Restez sur la même page
-                    echo '<script>window.history.back();</script>';
+                    header("Location: ./accueil.html");
                     exit();
                 } else {
                     echo '<script>alert("Erreur lors de l\'enregistrement de la publication : " .' +  $conn->error + '");</script>';

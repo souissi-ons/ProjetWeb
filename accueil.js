@@ -49,6 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
               publication.description +
               "</span>";
             publicationsHTML += "</div>";
+
+            if (publication.choix === "vente") {
+              publicationsHTML += "<div>";
+              publicationsHTML += '<i class="bi bi-cash"></i>';
+              publicationsHTML +=
+                '<span class="prix autre-contect"> Prix: ' +
+                publication.prix +
+                " Dt</span>";
+              publicationsHTML += "</div>";
+            }
+
             publicationsHTML += "</div>";
             publicationsHTML += "</div>";
           });
@@ -63,6 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   };
-  xhr.open("GET", "home.php", true);
+  xhr.open("GET", "accueil.php", true);
   xhr.send();
 });
