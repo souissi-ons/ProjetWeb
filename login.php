@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Ajoutez d'autres données utilisateur si nécessaire
 
                 // Redirection vers la page home.html après la connexion réussie
-                header("Location: home.html");
+                header("Location: accueil.html");
                 exit();
             } else {
                 // Mot de passe incorrect
